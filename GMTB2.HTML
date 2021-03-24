@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>Gram's Milk Tea Bar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: center;
+  background-image: url("b.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</style>
+<style type="text/css">
+DIV{background-image: url(bluee.jpg);}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-white">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-white">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-white">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-white">SERVICES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-white">LOCATION</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 10:00 am to 10:00 pm</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"><b>Norzagaray, Bulacan</span></b>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Gram's Milk Tea Bar</span></h5>
+    <p class="w3-text-white">The Gram's Milk Tea Bar was founded in Norzagaray, Bulacan by Gillianne Santiago, Ruby Ann Agustin, Angelica Yambot and Mariz Respicio.</p>
+    <p class="w3-text-white">In addition to our milk tea menu, we serve good side dishes.</p>
+    <div class="w3-panel w3-leftbar w3-white">
+      <p class="w3-text-white"><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p class="w3-text-white">Chef, Milk Tea Lover and Co-Owner: Ruby Ann Agustin </p>
+    </div>
+    <img src="e.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p class="w3-text-white"><strong>Opening hours:</strong> Everyday from 10:00 am to 10:00 pm.</p>
+    <p class="w3-text-white"><strong>Address:</strong> Norzagaray, Bulacan</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink"><p class="w3-text-white">Eat</p></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Milk Tea');">
+        <div class="w3-col s6 tablink"><p class="w3-text-white">Milk Tea</p></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Hot Deals');">
+       <div class="w3-col s6 tablink"><p class="w3-text-white">Hot Deals</p></div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5><p class="w3-text-white">Fries and Nachos</h5></p>
+      <p class="w3-text-white">Cheese and Barbeque.</p><br>
+    
+      <h5><p class="w3-text-white">Fried and Steam Siomai</h5></p>
+      <p class="w3-text-white">Pork, Chicken and Beef.</p><br>
+    
+      <h5><p class="w3-text-white">Supreme Burger</h5></p>
+      <p class="w3-text-white">Two Patties with cheese, lettuce, pickles and onion.</p><br>
+    
+      <h5><p class="w3-text-white">Hawaiian Pizza</h5></p>
+      <p class="w3-text-white">topped with tomato sauce, cheese, pineapple, and back bacon or ham.</p><br>
+    
+      <h5><p class="w3-text-white">Blueberry Pancakes</h5></p>
+      <p class="w3-text-white">With syrup, butter and lots of berries.</p>
+    </div>
+
+    <div id="Milk Tea" class="w3-container menu w3-padding-48 w3-card">
+      <h5><p class="w3-text-white">Okinawa</h5></p>
+      <p class="w3-text-white">Sinful brown sugar flavor with creamy-velvety milk.</p><br>
+    
+      <h5><p class="w3-text-white">Wintermelon</h5></p>
+      <p class="w3-text-white">Sweet caramelized flavor enhaced by creamy-velvety.</p><br>
+    
+      <h5><p class="w3-text-white">Hokkaido</h5></p>
+      <p class="w3-text-white">Delectable butter toffee caramel flavor enhanced by creamy milk.</p><br>
+    
+      <h5><p class="w3-text-white">Choco Royal</h5></p>
+      <p class="w3-text-white">Creamy, light and fragrant milk tea accentuated by rich chocolate.</p><br>
+    
+      <h5><p class="w3-text-white">Milo Dino</h5></p>
+      <p class="w3-text-white">Rich flavored iced Milo topped with plain Milo powder.</p>
+    </div>  
+
+    <div id="Hot Deals" class="w3-container menu w3-padding-48 w3-card">
+      <h5><p class="w3-text-white">Fruity Bal</h5></p>
+      <p class="w3-text-white">Freshly squeezed lemon with pure natural honey.</p><br>
+    
+      <h5><p class="w3-text-white">Triple Chocolate Babe</h5></p>
+      <p class="w3-text-white">Milky dark chocolate with crushed Hershey's and Ritter Sport's Dark Chocolate.</p><br>
+    
+      <h5><p class="w3-text-white">Matcha Latte Bes</h5></p>
+      <p class="w3-text-white">House blend matcha green tea with creamy milk over ice.</p><br>
+    </div>
+      <img src="a.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOCATE US AT</span></h5>
+    <center><b><p class="w3-text-white">Norzagaray, Bulacan.</p></center></b>
+    <img src="c.jpg" class="w3-image" style="width:100%">
+    <p class="w3-text-white"><span class="w3-tag">FYI!</span> We offer delivery for everyone.</p>
+   
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-white";
+}
+document.getElementById("myLink").click();
+</script>
+<p class="w3-text-white">Date/Time: <span id="datetime"></span></p>
+<p class="w3-text-white">
+<script>
+  var currentDate = new Date(),
+      month = currentDate.getMonth() + 1,
+      day = currentDate.getDate(),
+      year = currentDate.getFullYear();
+  document.write(month + "/" + day + "/" + year)
+</script>
+</p>
+
+<p class="w3-text-white">
+<script>
+      var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	var suffix = "AM";
+	if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+	}
+	if (hours == 0) {
+	 hours = 12;
+	}
+
+	document.write(hours + ":" + minutes + " " + suffix)
+</script>
+</p>
+
+</body>
+</html>
